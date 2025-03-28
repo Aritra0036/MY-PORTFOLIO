@@ -46,12 +46,12 @@ window.addEventListener('scroll', () => {
 
 function sendEmail() {
     const recipient = "aritra0036@gmail.com";
-
-    const email = document.getElementById("email").value;
+    const name = document.getElementById("name").value;
+    const phone = document.getElementById("phone").value;
     const subject = document.getElementById("subject").value;
     const message = document.getElementById("message").value;
 
-    const mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent("From: " + email + "\n\n" + message)}`;
+    const mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent("From: " + name + "\n\n" + phone +"\n\n" + message)}`;
     // Open default mail client (Gmail, Outlook, etc.)
     window.location.href = mailtoLink;
 }
