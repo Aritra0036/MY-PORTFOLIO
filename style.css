@@ -370,6 +370,9 @@ button:active {
     height: 4.2rem;
     font-size: 2rem; 
   }
+  .home-button{
+    gap: 2rem;
+  }
 }  
 @media (max-width: 360px) {
   .home {
@@ -389,7 +392,15 @@ button:active {
   }
   .button {
     padding: 0.4em 1em;
-    font-size: 1em;
+    font-size: 1.2em;
+  }
+  .social-icon a {
+    width: 4rem;
+    height: 4rem;
+    font-size: 2rem; 
+  }
+  .home-button{
+    gap: 2rem;
   }
 }  
 

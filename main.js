@@ -21,8 +21,39 @@ window.onscroll = () => {
     });
 }
 
-menuIcon.onclick = () => {
+// menuIcon.onclick = () => {
+//     menuIcon.classList.toggle('bx-x');
+//     navber.classList.toggle('active');
+// }
+menuIcon.onclick = (e) => {
+    e.stopPropagation(); 
     menuIcon.classList.toggle('bx-x');
     navber.classList.toggle('active');
+};
+
+document.addEventListener('click', (e) => {
+    if (!navber.contains(e.target) && e.target !== menuIcon) {
+        navber.classList.remove('active');
+        menuIcon.classList.remove('bx-x');
+    }
+});
+
+window.addEventListener('scroll', () => {
+    navber.classList.remove('active');
+    menuIcon.classList.remove('bx-x');
+});
+
+
+function sendEmail() {
+    const recipient = "aritra0036@gmail.com";
+
+    const email = document.getElementById("email").value;
+    const subject = document.getElementById("subject").value;
+    const message = document.getElementById("message").value;
+
+    const mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent("From: " + email + "\n\n" + message)}`;
+    // Open default mail client (Gmail, Outlook, etc.)
+    window.location.href = mailtoLink;
 }
 
+  
