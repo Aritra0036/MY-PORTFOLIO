@@ -46,14 +46,19 @@ window.addEventListener('scroll', () => {
 
 function sendEmail() {
     const recipient = "aritra0036@gmail.com";
-    const name = document.getElementById("name").value;
-    const phone = document.getElementById("phone").value;
-    const subject = document.getElementById("subject").value;
-    const message = document.getElementById("message").value;
+    const name = document.getElementById("name").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const subject = document.getElementById("subject").value.trim();
+    const message = document.getElementById("message").value.trim();
 
-    const mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent("From: " + name + "\n\n" + phone +"\n\n" + message)}`;
-    // Open default mail client (Gmail, Outlook, etc.)
+    if (!name || !phone || !subject || !message) {
+        alert("Please fill in all fields before Submit.");
+        return false;
+    }
+    const emailBody = `From: ${name}\nPhone: ${phone}\n\nMessage:\n${message}`;
+    const mailtoLink = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(emailBody)}`;
     window.location.href = mailtoLink;
+    return false;
 }
 
   
