@@ -339,9 +339,60 @@ button:active {
     .button {
       padding: 0.4em 1em; 
       font-size: 1em; 
+  }  
+} 
+@media (max-width: 700px) {
+  .logo {
+    font-size: 2.8rem;
+    font-weight: 800;
   }
-    
-}   
+  .home {
+    flex-direction: column;
+    margin: 0rem 2rem;
+  }
+  .home .home-content h3 {
+    font-size: 2.5rem;
+  }
+  .home .home-content h1 {
+    font-size: 4rem;
+    margin-top: -12rem;
+  }
+  .home .home-img img {
+    width: 65vw;
+    margin-top: 2rem;
+  }
+  .button {
+    padding: 0.4em 1em;
+    font-size: 1.2em;
+  }
+  .social-icon a {
+    width: 4.2rem;
+    height: 4.2rem;
+    font-size: 2rem; 
+  }
+}  
+@media (max-width: 360px) {
+  .home {
+    flex-direction: column;
+    margin: 0rem 2rem;
+  }
+  .home .home-content h3 {
+    font-size: 1.8rem;
+  }
+  .home .home-content h1 {
+    font-size: 3.5rem;
+    margin-top: -12rem;
+  }
+  .home .home-img img {
+    width: 60vw;
+    margin-top: 5rem;
+  }
+  .button {
+    padding: 0.4em 1em;
+    font-size: 1em;
+  }
+}  
+
 
 /* @media (max-width: 1130px) {
   .home {
@@ -537,6 +588,12 @@ button:active {
    .services .service-container {
         grid-template-columns: repeat(1, 1fr);
     }
+    .services .single-service {
+      margin: 0 -25px;
+  }
+    .services .heading {
+      margin-bottom: 20px;
+    }
 }
 
 /* SKILLS */
@@ -554,6 +611,7 @@ button:active {
   width: 70%;
   margin: auto;
   margin-top: 2rem;
+
 }
 
 .skills .container .row {
@@ -607,9 +665,9 @@ button:active {
   }
 
   .skills .container {
-      width: 100%; /* Ensure full width on small screens */
-      margin-top: 5px;
+      width: 90%; /* Ensure full width on small screens */
       padding: 1rem; /* Adjust padding for small screens */
+      margin-bottom: 10rem;
   }
 
   .skills .container .bar .info img {
@@ -781,7 +839,7 @@ button:active {
         width: 100%;
         padding-left: 8rem;
         padding-right: 2rem;
-        margin-bottom: 3rem;
+        margin-bottom: 10rem;
     }
     .education .container::after {
         font-size: 2.2rem;
@@ -918,14 +976,14 @@ button:active {
     font-size: 5rem;
   }
   
-  .project .container h2::after {
+  /* .project .container h2::after {
     content: '';
     width: 100px;
     height: 4px;
     background: var(--text-color);
     display: block;
     margin: 0.5rem auto 0;
-  }
+  } */
   
   .projects {
     display: grid;
@@ -1017,10 +1075,12 @@ button:active {
   @media (max-width: 600px) {
     .project .container {
       padding: 1rem;
+      margin: 70px 10px;
     }
   
    .project .container h2 {
       font-size: 5rem;
+      margin-top: -7rem;
     }
   }
   
@@ -1132,6 +1192,9 @@ form input, form textarea {
         padding: 2rem 0.2rem 2rem 0.2rem;
         gap: 1rem;
         display: grid;
+    }
+    .contact .container {
+      margin-bottom: 6rem;
     }
 }
 
