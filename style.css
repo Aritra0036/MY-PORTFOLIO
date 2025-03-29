@@ -493,6 +493,7 @@ button:active {
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     gap: 2.5rem;
+    margin-bottom: 10rem;
 }
 
 .services .single-service {
@@ -622,7 +623,7 @@ button:active {
   width: 70%;
   margin: auto;
   margin-top: 2rem;
-
+  margin-bottom: 10rem;
 }
 
 .skills .container .row {
@@ -717,6 +718,7 @@ button:active {
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
+  margin-bottom: 8rem;
 }
 
 .education .timeline::after {
@@ -980,9 +982,10 @@ button:active {
     max-width: 1200px;
     margin: 0 auto;
     position: relative;
+    margin-bottom: 10rem;
   }
   
-.project .container h2 {
+.project h2 {
     text-align: center;
     font-size: 5rem;
   }
@@ -1000,13 +1003,15 @@ button:active {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
-    margin-top:5%;
+    margin-top:3%;
   }
   
   .projects .project-card {
-    background: #fff;
+    /* background: #fff; */
+    background: linear-gradient(135deg, #d3d3d3, #e6e6e6, #ffffff);
     border-radius: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3); */
     overflow: hidden;
     transition: transform 0.3s, box-shadow 0.3s;
     position: relative;
@@ -1015,6 +1020,7 @@ button:active {
   .projects .project-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2); */
   }
   
   .project-card .project-image {
@@ -1042,6 +1048,7 @@ button:active {
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, 0.5);
+    /* background: rgba(255, 255, 255, 0.5); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1076,23 +1083,21 @@ button:active {
     margin-bottom: 1rem;
     font-size: 1.7rem;
     color: var(--bg-color);
+    /* color: white; */
   }
   
   .project-info p {
     color: #090909;
+    /* color: white; */
     font-size: 1.5rem;
   }
   
   @media (max-width: 600px) {
     .project .container {
       padding: 1rem;
-      margin: 70px 10px;
+      margin-bottom: 10rem;
     }
-  
-   .project .container h2 {
-      font-size: 5rem;
-      margin-top: -7rem;
-    }
+
   }
   
   @keyframes float {
@@ -1124,7 +1129,8 @@ button:active {
     padding: 2rem;
     width: 90%;
     margin: 0 auto;
-    margin-top: 3rem;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
     background: var(--second-bg-color);
 }
 .contact .container .row {
@@ -1193,10 +1199,7 @@ form input, form textarea {
 }
 
 @media screen and (max-width:600px){
-    /* .contact .container {
-         margin:0;
-        padding: 0; 
-    } */
+
     .contact .container .row {
         grid-template-columns:  repeat(1, 2fr);
         margin: 1rem;

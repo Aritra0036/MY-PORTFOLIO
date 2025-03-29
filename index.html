@@ -49,13 +49,13 @@
         </div>
 
         <div class="home-button">
-          <button class="button">
+          <a href="#contact"><button class="button">
             <!-- <p><a href="#contact" style="color: #fd560d;">Hire Me</a></p> -->
-            <p><a href="#contact" style="color:  #9fb69c;">Hire Me</a></p>
-          </button>
-          <button class="button">
-            <p><a href="#contact" style="color: #9fb69c;">Contact</a></p>
-          </button>
+            <p>Hire Me</p>
+          </button></a>
+          <a href="#contact"><button class="button">
+            <p>Contact</p>
+          </button></a>
         </div>
       </div>
     </section>
@@ -253,8 +253,8 @@
     </section>
     
     <section class="project" id="project">
-      <div class="container">
-        <h2>Projects</h2>
+      <h2>Projects</h2>
+      <div class="container"> 
         <div class="projects">
           <div class="project-card">
             <div class="project-image">
@@ -317,7 +317,7 @@
               <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
               <input type="text" id="subject" name="subject" placeholder="Subject" required>
               <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
-              <button type="submit" class="button">Submit</button>
+              <button type="submit" class="button"><p>Submit</p></button>
             </form>
           </div>
         </div>
@@ -342,36 +342,15 @@
       © Aritro Chatterjee | All Right Reserved
     </p>
   </footer>
+
+  <audio id="backgroundAudio" loop>
+    <source src="Nature.mp3" type="audio/mp3">
+  </audio>
+  <button id="playButton" style="position: absolute; left: -9999px; opacity: 0;">Play</button>
+
+
  <script src="main.js"></script> 
-  <!-- <script>
-    let menuIcon = document.querySelector('#menu-icon');
-let navber = document.querySelector('.navber');
-
-let sections = document.querySelectorAll('section');
-let navLinks = document.querySelectorAll('header nav a');
-
-window.onscroll = () => {
-    sections.forEach(sec => {
-        let top = window.scrollY;
-        let offset = sec.offsetTop - 150;
-        let height = sec.offsetHeight;
-        let id = sec.getAttribute('id');
-
-        if (top >= offset && top < offset + height){
-            navLinks.forEach(links => {
-                links.classList.remove('active');
-                document.querySelector('header nav a[href*="' + id + '"]').classList.add('active');
-            })
-        }
-        
-    });
-}
-
-menuIcon.onclick = () => {
-    menuIcon.classList.toggle('bx-x');
-    navber.classList.toggle('active');
-}
-  </script> -->
+ 
   </body>
 </html>
 

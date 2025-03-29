@@ -61,4 +61,22 @@ function sendEmail() {
     return false;
 }
 
-  
+let audio = document.getElementById('backgroundAudio');
+    let playButton = document.getElementById('playButton');
+    let audioStarted = false;
+
+    window.onscroll = function () {
+        if (!audioStarted) {
+            playButton.click(); // ✅ Auto-click hidden button
+        }
+    };
+
+    playButton.addEventListener('click', function () {
+        audio.play().then(() => {
+            console.log('Audio started successfully');
+            audioStarted = true; // ✅ Prevent multiple play attempts
+            window.onscroll = null; // ✅ Remove event listener after first play
+        }).catch(error => {
+            console.log('Playback failed:', error);
+        });
+    });
