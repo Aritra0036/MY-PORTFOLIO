@@ -299,9 +299,9 @@ button:active {
   }
 }  */
 
-@media (min-width: 1021px) and (max-height: 700px){
+@media (min-width: 1021px) and (max-height: 780px){
   .home-content h3 {
-    font-size: 3.5rem;
+    font-size: 3.3rem;
   }
 
 }
@@ -379,7 +379,7 @@ button:active {
   }
 }
 
-@media (min-width: 701px) and (max-width: 1020px){
+@media (min-width: 701px) and (max-width: 1020px) and (orientation: portrait){
   .logo {
      font-size: 4rem;
   }
@@ -415,7 +415,42 @@ button:active {
   }
 }
 
-@media (min-width: 381px) and (max-width: 700px) {
+@media (min-width: 701px) and (max-width: 1020px) and (orientation: landscape) {
+ 
+  .home .home-content h3 {
+    font-size: 2.5rem;
+  }
+  .home .home-content h1 {
+    font-size: 3.5rem;
+    margin-top: 5rem;
+  }
+  .home-content p {
+    font-size: 1.5em;
+  }
+  .home .home-img img {
+      position: relative;
+      width: 30vw;
+      margin-bottom: 3rem;
+      border-radius: 50%;
+      box-shadow: 0 0 10px var(--main-color), 0 0 15px var(--main-color),
+        0 0 50px var(--main-color);
+      cursor: pointer;
+  }
+  .button {
+    padding: 0.3em 0.8em;
+    font-size: 1em;
+  }
+  .social-icon a {
+    width: 2.8rem;
+    height: 2.8rem;
+    font-size: 1.2rem; 
+  }
+  .home-button {
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 381px) and (max-width: 700px) and (orientation: portrait) {
   .logo {
     font-size: 2.8rem;
     font-weight: 800;
@@ -448,6 +483,42 @@ button:active {
     gap: 2rem;
   }
 }  
+
+@media (min-width: 381px) and (max-width: 700px) and (orientation: landscape) {
+ 
+  .home .home-content h3 {
+    font-size: 2rem;
+  }
+  .home .home-content h1 {
+    font-size: 3rem;
+    margin-top: 5rem;
+  }
+  .home-content p {
+    font-size: 1.2em;
+  }
+  .home .home-img img {
+      position: relative;
+      width: 30vw;
+      margin-bottom: 3rem;
+      border-radius: 50%;
+      box-shadow: 0 0 10px var(--main-color), 0 0 15px var(--main-color),
+        0 0 50px var(--main-color);
+      cursor: pointer;
+  }
+  .button {
+    padding: 0.3em 0.8em;
+    font-size: 1em;
+  }
+  .social-icon a {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.2rem; 
+  }
+  .home-button {
+    gap: 1.5rem;
+  }
+}
+
 @media (max-width: 380px)  {
   .home {
     flex-direction: column;
@@ -664,16 +735,61 @@ button:active {
     color: #000000;
 }
 
-@media (max-width: 991px) {
-    section {
-        padding: 10rem 3% 2rem;
-    }
-    .services {
-        padding-bottom: 7rem;
-    }
+@media (min-width: 501px) and (max-width: 1300px) {
+  .services .service-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  .services .single-service {
+      padding: 20px 10px;
+  }
+  .services .single-service .title {
+      font-size: 10px;
+  }
+  .services .single-service .description {
+      font-size: 10px;
+  }
+  .services .single-service .icon {
+      width: 50px;
+      height: 50px;
+      font-size: 20px;
+      line-height: 50px;
+  }
+  .services .single-service a {
+      font-size: 10px;
+  }
+  .services .single-service .circle-before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(40%, -40%);
+    width: 150px;
+    height: 150px;
+  }
 }
 
-@media (max-width: 895px) {
+@media (max-width: 500px) {
+  .services .service-container {
+       grid-template-columns: repeat(1, 1fr);
+   }
+   .services .single-service {
+     margin: 0 -25px;
+ }
+   .services .heading {
+     margin-bottom: 20px;
+   }
+}
+
+/* @media (max-width: 991px) {
+    section {
+        padding: 10rem 3% 2rem ;
+    }
+    .services {
+        padding-bottom: 7rem
+    }
+} */
+
+/* @media (max-width: 895px) {
    .services .service-container {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -683,7 +799,7 @@ button:active {
     .services .heading {
       margin-bottom: 20px;
     }
-}
+} */
 
 /* SKILLS */
 
