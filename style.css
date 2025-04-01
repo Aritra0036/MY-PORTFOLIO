@@ -1497,7 +1497,7 @@ button:active {
       margin-bottom: 6rem;
     }
   }
-  @media (min-height: 700px) and (max-height: 1400px) and (orientation: portrait) {
+  @media (min-width: 800px) and (min-height: 700px) and (max-height: 1400px) and (orientation: portrait) {
     .projects {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
