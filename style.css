@@ -303,7 +303,6 @@ button:active {
   .home-content h3 {
     font-size: 3.3rem;
   }
-
 }
 
 @media (min-width: 1024px) and (min-height: 1200px){
@@ -345,7 +344,6 @@ button:active {
     gap: 2rem;
   }
 }
-     
 
 @media (max-width: 995px) { 
   #menu-icon {
@@ -418,19 +416,20 @@ button:active {
 @media (min-width: 701px) and (max-width: 1020px) and (orientation: landscape) {
  
   .home .home-content h3 {
-    font-size: 2.5rem;
+    font-size: 2.6rem;
   }
   .home .home-content h1 {
-    font-size: 3.5rem;
-    margin-top: 5rem;
+    font-size: 3.7rem;
+    margin-top: 4rem;
   }
   .home-content p {
-    font-size: 1.5em;
+    font-size: 1.6em;
   }
   .home .home-img img {
       position: relative;
-      width: 30vw;
-      margin-bottom: 3rem;
+      width: 28vw;
+      margin-bottom: 2.5rem;
+      margin-left: 1rem;
       border-radius: 50%;
       box-shadow: 0 0 10px var(--main-color), 0 0 15px var(--main-color),
         0 0 50px var(--main-color);
@@ -441,9 +440,9 @@ button:active {
     font-size: 1em;
   }
   .social-icon a {
-    width: 2.8rem;
-    height: 2.8rem;
-    font-size: 1.2rem; 
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
   }
   .home-button {
     gap: 1.5rem;
@@ -485,21 +484,24 @@ button:active {
 }  
 
 @media (min-width: 381px) and (max-width: 700px) and (orientation: landscape) {
- 
+  .logo {
+    font-size: 2.5rem;
+  }
   .home .home-content h3 {
     font-size: 2rem;
   }
   .home .home-content h1 {
     font-size: 3rem;
-    margin-top: 5rem;
+    margin-top: 4rem;
   }
   .home-content p {
     font-size: 1.2em;
   }
   .home .home-img img {
       position: relative;
-      width: 30vw;
-      margin-bottom: 3rem;
+      width: 28vw;
+      margin-bottom: 2rem;
+      margin-left: 2rem;
       border-radius: 50%;
       box-shadow: 0 0 10px var(--main-color), 0 0 15px var(--main-color),
         0 0 50px var(--main-color);
@@ -513,6 +515,7 @@ button:active {
     width: 2.5rem;
     height: 2.5rem;
     font-size: 1.2rem; 
+    margin-top: 2rem;
   }
   .home-button {
     gap: 1.5rem;
@@ -520,6 +523,12 @@ button:active {
 }
 
 @media (max-width: 380px)  {
+  .logo {
+    font-size: 2.2rem;
+  }
+  #menu-icon {
+    font-size: 2.5rem;
+  }
   .home {
     flex-direction: column;
     margin: 0rem 2rem;
@@ -529,11 +538,11 @@ button:active {
   }
   .home .home-content h1 {
     font-size: 3rem;
-    margin-top: -15rem;
+    margin-top: -16rem;
   }
   .home .home-img img {
-    width: 60vw;
-    margin-top: 5rem;
+    width: 56vw;
+    margin-top: -5rem;
   }
   .home-content p {
     font-size: 1.5em;
@@ -551,7 +560,6 @@ button:active {
     gap: 2rem;
   }
 }  
-
 
 /* @media (max-width: 1130px) {
   .home {
@@ -735,16 +743,21 @@ button:active {
     color: #000000;
 }
 
-@media (min-width: 501px) and (max-width: 1300px) {
+@media (min-width: 801px) and (max-width: 1300px) and (orientation: portrait){
   .services .service-container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 1.5rem;
   }
-  .services .single-service {
-      padding: 20px 10px;
+  /* .services .single-service {
+      position: relative;
+      margin-top: 30px;
+      background-color: var(--bg-color);
+      border-radius: 10px;
+      padding: 20px;
+      overflow: hidden; 
   }
   .services .single-service .title {
-      font-size: 10px;
+      font-size: 15px;
   }
   .services .single-service .description {
       font-size: 10px;
@@ -765,10 +778,23 @@ button:active {
     transform: translate(40%, -40%);
     width: 150px;
     height: 150px;
-  }
+  } */
 }
-
-@media (max-width: 500px) {
+@media (min-width: 501px) and (max-width: 800px) and (orientation: portrait){
+  .services .service-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+  }
+  /* .services .single-service {
+      position: relative;
+      margin-top: 30px;
+      background-color: var(--bg-color);
+      border-radius: 10px;
+      padding: 30px;
+      overflow: hidden; 
+  } */
+}
+@media (max-width: 500px) and (orientation: portrait){
   .services .service-container {
        grid-template-columns: repeat(1, 1fr);
    }
@@ -778,6 +804,107 @@ button:active {
    .services .heading {
      margin-bottom: 20px;
    }
+}
+
+/* @media (min-height: 450px) and (max-height: 800px) and (orientation: landscape) {
+  
+} */
+@media (min-width: 900px) and (max-height: 450px) and (orientation: landscape) {
+  .services .service-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    
+  }
+  .services .single-service {
+    position: relative;
+    margin-top: 4px;
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    padding: 20px;
+    overflow: hidden; 
+} 
+.services .single-service .title {
+    font-size: 13px;
+}
+.services .single-service .description {
+    font-size: 10px;
+}
+.services .single-service .icon {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+}
+.services .single-service a {
+    font-size: 10px;
+}
+.services .single-service .circle-before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(40%, -40%);
+  width: 150px;
+  height: 150px;
+}
+  .heading {
+    text-align: center;
+    font-size: 4rem;
+    margin-top: -2%;
+}
+}
+@media (max-width: 899px) and (max-height: 450px) and (orientation: landscape) {
+  .services .service-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    justify-content: center;
+  } 
+  .services .single-service:nth-child(odd):last-child {
+    grid-column: span 2;
+    justify-self: center;
+    width: 50%;
+  }
+  .services .single-service {
+      position: relative;
+      margin-top: 4px;
+      background-color: var(--bg-color);
+      border-radius: 10px;
+      padding: 20px;
+      overflow: hidden; 
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 250px;
+  }
+  .services .single-service .title {
+      font-size: 15px;
+  }
+  .services .single-service .description {
+      font-size: 10px;
+  }
+  .services .single-service .icon {
+      width: 50px;
+      height: 50px;
+      font-size: 20px;
+      line-height: 50px;
+  }
+  .services .single-service a {
+      font-size: 10px;
+  }
+  .services .single-service .circle-before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(40%, -40%);
+    width: 150px;
+    height: 150px;
+  }  
+  .heading {
+    text-align: center;
+    font-size: 4rem;
+    margin-top: -2%;
+}
 }
 
 /* @media (max-width: 991px) {
@@ -813,7 +940,7 @@ button:active {
   color: var(--text-color);
   border-radius: 1rem;
   padding: 2rem;
-  width: 70%;
+  width: 90%;
   margin: auto;
   margin-top: 2rem;
   margin-bottom: 10rem;
@@ -861,44 +988,72 @@ button:active {
   margin-left: 0.5rem;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) and (orientation: portrait){
   .skills .container .row {
-      grid-template-columns: repeat(2, 1fr); /* Adjusted for two columns on small screens */
+      grid-template-columns: repeat(2, 1fr); 
       margin: 1rem;
       padding: 0;
       gap: 1rem;
   }
-
+  .skills .container .row .bar:nth-child(odd):last-child {
+    grid-column: span 2;
+    justify-self: center;
+    width: 50%;
+  } 
   .skills .container {
-      width: 90%; /* Ensure full width on small screens */
-      padding: 1rem; /* Adjust padding for small screens */
+      width: 90%; 
+      padding: 1rem; 
       margin-bottom: 10rem;
   }
-
   .skills .container .bar .info img {
-      width: 10vw; /* Adjust image size for small screens */
+      width: 10vw;
   }
-
   .skills .container .bar .info span {
-      font-size: 1.5rem; /* Reduce font size for small screens */
+      font-size: 1.5rem;
   }
 }
 
-@media screen and (min-width: 601px) and (max-width: 1200px) {
+@media screen and (min-width: 601px) and (max-width: 1200px) and (orientation: portrait){
   .skills .container {
-      width: 90%; /* Ensure the container adjusts well on medium screens */
+      width: 90%; 
   }
-
   .skills .container .row {
-      grid-template-columns: repeat(3, 1fr); /* Three columns on medium screens */
+      grid-template-columns: repeat(3, 1fr);
   }
-
   .skills .container .bar .info img {
-      width: 8vw; /* Adjust image size for medium screens */
+      width: 8vw; 
   }
-
   .skills .container .bar .info span {
-      font-size: 1.75rem; /* Adjust font size for medium screens */
+      font-size: 1.75rem; 
+  }
+}
+
+@media (max-height: 450px) and (orientation: landscape) {
+  .skills .container .row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.8rem;
+  } 
+  .skills .container .bar {
+    margin-bottom: 5px;
+  }
+  .skills .container {
+    width: 90%;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 10rem;
+  }
+  .skills .container .bar .info img { 
+    width: 6vw;  
+  }
+  .skills .container .bar .info span {
+    font-size: 1.5rem; 
+}
+}
+
+@media (max-height: 450px) and (orientation: landscape) {
+  .skills .container {
+    margin-bottom: 7rem;
   }
 }
 
@@ -1072,6 +1227,21 @@ button:active {
       height: 9rem;
   }
 }
+@media (max-height: 450px) and (orientation: landscape) {
+  .education .container {
+    max-width: 800px;
+}
+  .education .timeline { 
+    margin-bottom: 4rem; 
+}
+.education .content {
+  border-radius: 6px;
+  height: 6.8rem;
+}
+.education .content .tag h2 {
+  font-size: 1.5rem;
+}
+}
 
 /*  Project */
 /*.project{
@@ -1177,11 +1347,11 @@ button:active {
     position: relative;
     margin-bottom: 10rem;
   }
-  
-.project h2 {
+
+/* .project h2 {
     text-align: center;
     font-size: 5rem;
-  }
+  } */
   
   /* .project .container h2::after {
     content: '';
@@ -1198,7 +1368,7 @@ button:active {
     gap: 3rem;
     margin-top:3%;
   }
-  
+
   .projects .project-card {
     /* background: #fff; */
     background: linear-gradient(135deg, #d3d3d3, #e6e6e6, #ffffff);
@@ -1312,7 +1482,21 @@ button:active {
   .project-card:hover {
     animation-play-state: paused;
   }
-
+  
+  @media (max-height: 450px) and (orientation: landscape) {
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 3rem;
+      margin-top:3%;
+    }
+    .project .container {
+      max-width: 1200px;
+      margin: 0 3rem;
+      position: relative;
+      margin-bottom: 6rem;
+    }
+  }
 
 /* Contact */
 .contact {
@@ -1391,7 +1575,15 @@ form input, form textarea {
     color:#000000
 }
 
-@media screen and (max-width:600px){
+@media (min-width: 601px) and (max-width: 899px) and (max-height: 450px) and (orientation: landscape) {
+    .project .container .projects .project-card:nth-child(odd):last-child {
+      grid-column: span 2;
+      justify-self: center;
+      width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px){
 
     .contact .container .row {
         grid-template-columns:  repeat(1, 2fr);
