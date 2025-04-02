@@ -1501,7 +1501,7 @@ button:active {
     animation-play-state: paused;
   }
   
-  /* @media (max-height: 450px) and (orientation: landscape) {
+  @media (min-width: 600px) and (max-height: 450px) and (orientation: landscape) {
     .projects {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -1514,7 +1514,7 @@ button:active {
       position: relative;
       margin-bottom: 6rem;
     }
-  } */
+  }
   @media (min-width: 700px) and (min-height: 700px) and (max-height: 1400px) and (orientation: portrait) {
     .projects {
       display: grid;
