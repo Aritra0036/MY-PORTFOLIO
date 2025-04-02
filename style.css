@@ -827,7 +827,7 @@ button:active {
     width: 50%;
   }
 }  */
-@media (min-width: 600px) and (max-height: 450px) and (orientation: landscape) {
+@media (min-width: 700px) and (max-height: 450px) and (orientation: landscape) {
   .services .service-container {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
@@ -870,7 +870,7 @@ button:active {
     margin-top: -2%;
 }
 }
-@media (max-width: 899px) and (max-height: 450px) and (orientation: landscape) {
+@media (max-width: 699px) and (max-height: 450px) and (orientation: landscape) {
   .services .service-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
