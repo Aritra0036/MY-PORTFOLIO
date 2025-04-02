@@ -806,10 +806,28 @@ button:active {
    }
 }
 
-/* @media (min-height: 450px) and (max-height: 800px) and (orientation: landscape) {
-  
-} */
-@media (min-width: 900px) and (max-height: 450px) and (orientation: landscape) {
+ /* @media (max-width: 900px) and (min-height: 1000px) {
+  .services .service-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    justify-content: center;
+  } 
+  .services .single-service {
+    position: relative;
+    margin-top: 4px;
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    padding: 20px;
+    overflow: hidden; 
+  } 
+  .services .single-service:nth-child(odd):last-child {
+    grid-column: span 2;
+    justify-self: center;
+    width: 50%;
+  }
+}  */
+@media (min-width: 600px) and (max-height: 450px) and (orientation: landscape) {
   .services .service-container {
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
